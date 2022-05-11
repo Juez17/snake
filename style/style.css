@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.page {
+  display: grid;
+  justify-content: center;
+}
+
+.game-section {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.game-section__game-title {
+  font-size: 5rem;
+  text-align: center;
+}
+.game-section__difficulty-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-content: center;
+}
+.game-section__point-section {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  margin-bottom: 0.7rem;
+}
+.game-section__choice {
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+.game-section__settings-section {
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.game-section__difficulty-catpion {
+  font-weight: bold;
+}
+.game-section__new-game-btn {
+  margin-left: auto;
+}
+
+.game-area {
+  display: grid;
+  grid-template-columns: repeat(16, 6rem);
+  grid-template-rows: repeat(10, 6rem);
+  border: 0.9rem solid red;
+  margin-bottom: 2rem;
+}
+.game-area__area-tile {
+  width: 6rem;
+  height: 6rem;
+}
+.game-area__area-tile--white {
+  background-color: white;
+}
+.game-area__area-tile--dark {
+  background-color: rgba(221, 220, 220, 0.815);
+}
+.game-area__area-tile--snake {
+  background-color: black;
+}
+.game-area__area-tile--snake--begin {
+  background-color: blue;
+}
+.game-area__mouse {
+  background-image: url('../img/lemmiwinks.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+  z-index: 2;
+}
+
+.modal-window {
+  font-size: 10rem;
+  background-color: rgba(255, 0, 0, 0.63);
+  padding: 0.7em 1em;
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
