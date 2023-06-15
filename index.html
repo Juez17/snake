@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Snake Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="dist/bundle.js" defer></script>
+  </head>
+
+  <body class="page">
+    <article class="game-section">
+      <div class="game-section__title-section">
+        <h1 class="game-section__game-title">Snake</h1>
+      </div>
+      <div class="game-section__point-section">
+        <p>Points: <output class="game-section__score-points">0</output></p>
+      </div>
+
+      <div class="game-area">
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+        <div class="game-area__area-tile game-area__area-tile--dark"></div>
+        <div class="game-area__area-tile game-area__area-tile--white"></div>
+      </div>
+
+      <div class="game-section__settings-section">
+        <p class="game-section__difficulty-catpion">Difficulty:</p>
+        <ul class="game-section__difficulty-list">
+          <li class="game-section__difficulty-list-item">
+            <label for="easy-choice">Easy</label
+            ><input
+              type="radio"
+              id="easy-choice"
+              name="difficulty-choice"
+              class="game-section__choice"
+              checked
+            />
+          </li>
+          <li class="game-section__difficulty-list-item">
+            <label for="medium-choice">Medium</label
+            ><input
+              type="radio"
+              id="medium-choice"
+              name="difficulty-choice"
+              class="game-section__choice"
+            />
+          </li>
+          <li class="game-section__difficulty-list-item">
+            <label for="hard-choice">Hard</label
+            ><input
+              type="radio"
+              id="hard-choice"
+              name="difficulty-choice"
+              class="game-section__choice"
+            />
+          </li>
+        </ul>
+        <button class="game-section__new-game-btn">New Game</button>
+      </div>
+    </article>
+
+    <div class="modal-window hidden">
+      <p>GAME OVER</p>
+    </div>
+  </body>
+</html>
